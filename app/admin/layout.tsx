@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { isAdmin } from "@/lib/auth";
+
+export const metadata: Metadata = {
+  title: "لوحة التحكم | عطارية فدك",
+  robots: { index: false, follow: false },
+};
+
+export default async function AdminLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  if (!(await isAdmin())) redirect("/login");
+  return <>{children}</>;
+}
