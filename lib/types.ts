@@ -39,6 +39,9 @@ export interface Socials {
 export interface Settings {
   /** How multiple TikTok links render on the public page */
   tiktokStyle: "separate" | "dropdown";
+  /** Personal number of the store owner, shown in the gold block at the bottom */
+  ownerName: string;
+  ownerPhone: string;
 }
 
 export interface StoreData {

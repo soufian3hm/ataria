@@ -46,15 +46,6 @@ const seed: StoreData = {
       ],
     },
     {
-      id: "wa-owner",
-      title: "واتساب المالك — محمد عطار",
-      subtitle: "الرقم الشخصي لصاحب عطارية فدك",
-      url: "https://wa.me/9647725756958",
-      icon: "whatsapp",
-      enabled: true,
-      clicks: 0,
-    },
-    {
       id: "tt-main",
       title: "تيك توك — الحساب الرئيسي",
       subtitle: "@fadk94",
@@ -110,13 +101,21 @@ const seed: StoreData = {
     },
   ],
   stats: { views: 0 },
-  settings: { tiktokStyle: "separate" },
+  settings: {
+    tiktokStyle: "separate",
+    ownerName: "محمد عطار",
+    ownerPhone: "07725756958",
+  },
   updatedAt: "",
 };
 
 /** Older stored blobs may miss newer fields — patch them in. */
 function normalize(data: StoreData): StoreData {
-  if (!data.settings) data.settings = { tiktokStyle: "separate" };
+  if (!data.settings) {
+    data.settings = { tiktokStyle: "separate", ownerName: "", ownerPhone: "" };
+  }
+  if (data.settings.ownerName === undefined) data.settings.ownerName = "";
+  if (data.settings.ownerPhone === undefined) data.settings.ownerPhone = "";
   return data;
 }
 

@@ -32,15 +32,6 @@
       ]
     },
     {
-      "id": "wa-owner",
-      "title": "واتساب المالك — محمد عطار",
-      "subtitle": "الرقم الشخصي لصاحب عطارية فدك",
-      "url": "https://wa.me/9647725756958",
-      "icon": "whatsapp",
-      "enabled": true,
-      "clicks": 0
-    },
-    {
       "id": "tt-main",
       "title": "تيك توك — الحساب الرئيسي",
       "subtitle": "@fadk94",
@@ -98,8 +89,10 @@
   "stats": {
     "views": 3
   },
-  "updatedAt": "2026-07-18T16:16:32.241Z",
+  "updatedAt": "2026-07-18T16:19:00.243Z",
   "settings": {
-    "tiktokStyle": "dropdown"
+    "tiktokStyle": "dropdown",
+    "ownerName": "محمد عطار",
+    "ownerPhone": "07725756958"
   }
 }

@@ -99,6 +99,13 @@ export default async function PublicPage() {
           )}
         </section>
 
+        {store.settings.ownerPhone ? (
+          <p className="owner-line">
+            الرقم الشخصي لصاحب المتجر {store.settings.ownerName} :{" "}
+            <span className="owner-num">{store.settings.ownerPhone}</span>
+          </p>
+        ) : null}
+
         <footer className="foot">
           <span>
             © {new Date().getFullYear()} {store.profile.name}
