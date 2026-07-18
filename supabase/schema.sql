@@ -45,9 +45,18 @@ values (
         "numbers": ["07711911901", "07751011911", "07751511911", "07751611911", "07751711911"]
       },
       {
+        "id": "wa-owner",
+        "title": "واتساب المالك — محمد عطار",
+        "subtitle": "الرقم الشخصي لصاحب عطارية فدك",
+        "url": "https://wa.me/9647725756958",
+        "icon": "whatsapp",
+        "enabled": true,
+        "clicks": 0
+      },
+      {
         "id": "tt-main",
         "title": "تيك توك — الحساب الرئيسي",
-        "subtitle": "76 ألف متابع — @fadk94",
+        "subtitle": "@fadk94",
         "url": "https://www.tiktok.com/@fadk94",
         "icon": "tiktok",
         "enabled": true,
@@ -56,7 +65,7 @@ values (
       {
         "id": "tt-2",
         "title": "تيك توك — الحساب الثاني",
-        "subtitle": "29 ألف متابع — @fadak51711911",
+        "subtitle": "@fadak51711911",
         "url": "https://www.tiktok.com/@fadak51711911",
         "icon": "tiktok",
         "enabled": true,
@@ -74,7 +83,7 @@ values (
       {
         "id": "fb-main",
         "title": "فيسبوك",
-        "subtitle": "20 ألف متابع",
+        "subtitle": "صفحتنا الرسمية",
         "url": "https://www.facebook.com/share/1BkyZZCW21/",
         "icon": "facebook",
         "enabled": true,
